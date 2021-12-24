@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "ActivityBooks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Bootstrap CSS -->
+
+
+    <title>Activity Books</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="mySidenav" class="sidenav">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+            <button onclick="wordsearchfun()">Word Search</button>
+            <button onclick="numberfun()">Number Connector</button>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Books</span>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+            function wordsearchfun() {
+                document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Word Search</h1><div class='row'><div class='column'><div class='card'><img src='https://images-na.ssl-images-amazon.com/images/I/71kfEAn9lLL.jpg'alt='Word Search Books for Kids' style='width:80%'><h1>Word Search Books for Kids</h1><p class='price'>₹300</p><p>Word Search book for kids of age 4 to 8</p><p><a href='/Home/Display'><button >View</button></a></p></div></div><div class='column'><div class='card'><img src='https://images-na.ssl-images-amazon.com/images/I/51N7nb8uUGL._SX352_BO1,204,203,200_.jpg'alt='Spelling Word Searches Ages 5-7' style='width:100%'><h1>Spelling Word Searches Ages 5-7</h1><p class='price'>₹346.00</p><p>Children have fun learning using word search</p><p><a href='/Home/BookDisplay'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://cdn.fcglcdn.com/brainbees/images/products/438x531/3443070a.webp'alt='Wonder House Books 101 Word Search Activity' style='width:100%'><h1>Wonder House Books 101 Word Search Activity</h1><p class='price'>₹164.00</p><p>Word Search Activity book for Kids</p><p><a href='/Home/WordSearch'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551230593l/44149053._SX318_.jpg'alt='Fun Word Search Puzzles' style='width:77.9%'><h1>Fun Word Search Puzzles</h1><p class='price'>₹200.00</p><p>Fun Activity for growing kids</p><p><a href='/home/wordsearch'><button>View</button></a></p></div></div></div>";
+        }
+            function numberfun() {
+                document.getElementById("demo").innerHTML = "<h1 style='text-align:center'>Number Connectors</h1><div class='row'><div class='column'><div class='card'><img src='https://images-na.ssl-images-amazon.com/images/I/61Bl5-gqY4L.jpg'alt='Dot to Dot' style='width:98.4%'><h1>Dot to Dot 1-50</h1><p class='price'>₹100.00</p><p>Play with numbers</p><p><a href='/Home/numberconnect'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://images-na.ssl-images-amazon.com/images/I/71fYgqwl7EL.jpg'alt='Connect the Dots' style='width:98.4%'><h1>Connect the Dots</h1><p class='price'>₹150.00</p><p> Learning Numbers in easy way</p><p><a href='/Home/NumberConnect'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://images-na.ssl-images-amazon.com/images/I/51bHXMBRtSL._SX371_BO1,204,203,200_.jpg'alt='Jumbo Dot to Dot' style='width:80%'><h1>The Super Fun Dot-to-Dot Activity Book for Children</h1><p class='price'>₹199.00</p><p>Fun in learning numbers</p><p><a href='/Home/NumberConnector'><button>View</button></a></p></div></div><div class='column'><div class='card'><img src='https://rukminim1.flixcart.com/image/416/416/kuu4x3k0/book/k/r/h/dot-to-dot-activity-book-part-1-original-imag7vz3y8rjeh3z.jpeg?q=70'alt='Dot to Dot' style='width:98.5%'><h1>Dot to Dot Activity</h1><p class='price'>₹99.00</p><p>Childern Fun Activity</p><p><a href='/home/NumberConnect'><button>View</button></a></p></div></div></div>"
+        }
+        </script>
+        <div id="demo">
+            <div style="display: flex; justify-content: center;">
+                <img alt="Welcome to Activity Books" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5IlKZZTdREOcYSeB8v-F8Oe14i-kevzLWGQ&usqp=CAU"
+                     style="width: 50%;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
